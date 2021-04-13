@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="270dp"
+        android:layout_height="30sp"
+        android:layout_toRightOf="@+id/tvName"
+        />
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Quantity:"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvName"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/edQuantity"
+        android:layout_width="270dp"
+        android:layout_height="30sp"
+        android:layout_toRightOf="@+id/tvQuantity"
+        android:layout_below="@+id/edName"
+        />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="257dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edQuantity"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tvQuantity"
+        android:text="ADD"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btView"
+        android:layout_width="257dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btAdd"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tvQuantity"
+        android:text="VIEW"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
